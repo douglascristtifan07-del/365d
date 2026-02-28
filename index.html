@@ -301,7 +301,7 @@
       <div class="cta-row">
         <a class="btn"
          href="https://go.hotmart.com/B104562988K"
-          target="_blank">
+          target="_blank"
            onclick="fbq('track','InitiateCheckout');">
           Quero começar meus 365 dias com Deus <span class="arrow">→</span>
         </a>
@@ -418,7 +418,7 @@
       <div class="cta-row">
         <a class="btn"
          href="https://go.hotmart.com/B104562988K"
-        target="_blank">
+        target="_blank"
            onclick="fbq('track','InitiateCheckout');">
           Quero começar agora <span class="arrow">→</span>
         </a>
@@ -432,226 +432,7 @@
 
   </main>
 </body>
-</html>    :root{
-      --bg-1:#fbf5f0;          /* creme */
-      --bg-2:#f6eee6;          /* bege suave */
-      --ink:#3b3b3b;           /* texto */
-      --muted:#6a6a6a;         /* texto fraco */
-      --rose:#cfa2a2;          /* rosé do título */
-      --rose-2:#b98989;        /* rosé mais forte */
-      --card:#ffffffcc;        /* card translúcido */
-      --stroke:#ead8d4;        /* borda suave */
-      --cta:#2f4a3a;           /* botão verde elegante */
-      --cta-2:#24392d;         /* hover */
-    }
-
-    *{ box-sizing:border-box; }
-    body{
-      margin:0;
-      color:var(--ink);
-      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      line-height:1.6;
-
-      /* Fundo no estilo da referência: suave, “papel”, com leve textura */
-      background:
-        radial-gradient(1200px 700px at 20% 10%, #ffffff 0%, rgba(255,255,255,0) 60%),
-        radial-gradient(900px 500px at 80% 20%, #ffffff 0%, rgba(255,255,255,0) 55%),
-        linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%),
-        repeating-linear-gradient(45deg, rgba(0,0,0,0.015) 0 2px, rgba(0,0,0,0) 2px 8px);
-      background-attachment: fixed;
-    }
-
-    .wrap{
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 36px 18px 80px;
-    }
-
-    .hero{
-      text-align:center;
-      padding: 56px 18px 18px;
-    }
-
-    .badge{
-      display:inline-block;
-      font-size:12px;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 14px;
-    }
-
-    .ornament{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      width:26px;
-      height:26px;
-      border-radius:999px;
-      border:1px solid var(--stroke);
-      color:var(--rose-2);
-      margin: 0 auto 12px;
-      background: #ffffff80;
-      font-size:14px;
-    }
-
-    .title{
-      font-family: "Great Vibes", cursive;
-      font-weight:400;
-      font-size: clamp(48px, 6vw, 78px);
-      line-height: 1.05;
-      color: var(--rose);
-      margin: 8px 0 12px;
-      text-shadow: 0 1px 0 rgba(255,255,255,0.6);
-    }
-
-    .subtitle{
-      font-family: "Playfair Display", serif;
-      font-weight: 400;
-      font-size: clamp(16px, 1.8vw, 20px);
-      color: var(--muted);
-      margin: 0 auto 18px;
-      max-width: 760px;
-    }
-
-    .lead{
-      font-size: 14px;
-      color: var(--muted);
-      max-width: 700px;
-      margin: 0 auto 26px;
-    }
-
-    .cta-row{
-      display:flex;
-      gap:12px;
-      justify-content:center;
-      flex-wrap:wrap;
-      margin-top: 10px;
-    }
-
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding: 14px 22px;
-      border-radius: 999px;
-      background: var(--cta);
-      color: #fff;
-      text-decoration:none;
-      font-weight: 600;
-      border: 1px solid rgba(255,255,255,0.15);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.10);
-      transition: transform .15s ease, background .15s ease;
-    }
-    .btn:hover{ background: var(--cta-2); transform: translateY(-1px); }
-    .btn .arrow{ font-weight:700; opacity:.9; }
-
-    .microtrust{
-      margin-top:10px;
-      font-size:12px;
-      color: var(--muted);
-    }
-
-    .section{
-      margin-top: 34px;
-      padding: 10px 0;
-    }
-
-    .section h2{
-      font-family: "Playfair Display", serif;
-      font-weight: 600;
-      font-size: 26px;
-      text-align:center;
-      margin: 0 0 14px;
-      color: #404040;
-    }
-
-    .section p{
-      max-width: 820px;
-      margin: 0 auto 10px;
-      color: var(--muted);
-      text-align:center;
-    }
-
-    .card{
-      max-width: 900px;
-      margin: 16px auto 0;
-      background: var(--card);
-      border: 1px solid var(--stroke);
-      border-radius: 22px;
-      padding: 22px;
-      box-shadow: 0 18px 40px rgba(0,0,0,0.06);
-      backdrop-filter: blur(6px);
-    }
-
-    .grid-2{
-      display:grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 12px;
-    }
-    @media (max-width: 720px){
-      .grid-2{ grid-template-columns: 1fr; }
-    }
-
-    .pill{
-      display:flex;
-      gap:10px;
-      align-items:flex-start;
-      padding: 14px 14px;
-      border-radius: 16px;
-      background: #ffffffb0;
-      border: 1px solid var(--stroke);
-      color: #505050;
-    }
-    .pill .ico{
-      width: 34px;
-      height: 34px;
-      border-radius: 12px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background: #fff;
-      border: 1px solid var(--stroke);
-      color: var(--rose-2);
-      flex: 0 0 auto;
-    }
-    .pill strong{
-      display:block;
-      font-weight: 600;
-      color: #454545;
-      margin-bottom: 2px;
-    }
-    .pill span{ font-size: 13px; color: var(--muted); }
-
-    .quote{
-      border-left: 3px solid var(--rose);
-      padding: 10px 14px;
-      margin: 10px 0;
-      color: #555;
-      font-style: italic;
-      background: #ffffff80;
-      border-radius: 14px;
-      border-top: 1px solid var(--stroke);
-      border-right: 1px solid var(--stroke);
-      border-bottom: 1px solid var(--stroke);
-    }
-
-    .divider{
-      width: 120px;
-      height: 1px;
-      background: var(--stroke);
-      margin: 26px auto;
-    }
-
-    .final{
-      margin-top: 34px;
-      padding: 34px 18px;
-      border-radius: 26px;
-      background: linear-gradient(180deg, rgba(47,74,58,0.00) 0%, rgba(47,74,58,0.08) 55%, rgba(47,74,58,0.14) 100%);
-      border: 1px solid rgba(47,74,58,0.10);
-      text-align:center;
-    }
+</html>    }
 
     .final h3{
       font-family: "Playfair Display", serif;
@@ -697,7 +478,9 @@
       </p>
 
       <div class="cta-row">
-        <a class="btn" href="SEU_LINK_CHECKOUT_AQUI"
+        <a class="btn"
+         href="https://go.hotmart.com/B104562988K"
+          target="_blank"
            onclick="fbq('track','InitiateCheckout');">
           Quero começar meus 365 dias com Deus <span class="arrow">→</span>
         </a>
@@ -812,7 +595,9 @@
       </p>
 
       <div class="cta-row">
-        <a class="btn" href="SEU_LINK_CHECKOUT_AQUI"
+        <a class="btn"
+         href="https://go.hotmart.com/B104562988K"
+        target="_blank"
            onclick="fbq('track','InitiateCheckout');">
           Quero começar agora <span class="arrow">→</span>
         </a>
@@ -826,5 +611,4 @@
 
   </main>
 </body>
-
 </html>
